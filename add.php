@@ -38,48 +38,41 @@
           </div>
         </div>
       </nav>
-
-  <div class="container">
-
-    <div class="row">
-        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus quo saepe error qui culpa aspernatur blanditiis modi facere! Labore error architecto cumque omnis fuga ducimus vitae iure. Iure, totam ab?</div>  
-              
-        <div class="col col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi esse vero omnis doloribus sed, maxime laboriosam pariatur, expedita perspiciatis nostrum facilis! Officia praesentium voluptatem reprehenderit cumque aut?</div>
-    </div>
-    
-        
+    <div class="container">
         <div class="row">
-            <div class="col col-12 col-sm-4 col-md-2 col-lg-2">
+            <div class="col col-12 col-sm-12 col-lg-12">
+               <table class="table table-borderless">
+                    <tr>
+                        <td><h3>Number 1</h3></td>
+                        <td> <input id="num1" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td><h3>Number 2</h3> </td>
+                        <td> <input id="num2" type="text" class="form-control"></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button onclick="addbtn()" class="btn btn-primary">ADD</button></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><p id="result"></p></td>
+                    </tr>
+               </table>
+                </div>
 
             </div>
-            
-            <div class="col col-12 col-sm-4 col-md-8 col-lg-8">
-                  <table class="table">  <h3> Login</h3>
-
-                    <td></td>
-                
-                    <tr>
-                        <td>Username</td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        <td>Password</td>
-                        <td><input type="text" class="form-control"></td>
-                    </tr>
-                    <tr>
-                        
-                        <td><button class="btn btn-primary">SUBMIT</button></td>
-                    </tr>
-               
-                  </table>
-             </div>
-            <div class="col col-12 col-sm-4 col-md-2 col-lg-2 "></div>
         </div>
-   
-   
-    </div>
+    <script>
+        function addbtn()
+        {
+           var n1=parseFloat(document.getElementById("num1").value)
+           var n2=parseFloat(document.getElementById("num2").value)
+           var n3= n1+n2
 
-
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        document.getElementById("result").innerHTML=n3
+        }
+    </script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script> 
 </body>
 </html>
